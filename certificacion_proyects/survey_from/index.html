@@ -1,0 +1,87 @@
+<!-- Objective: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks. Do not copy this demo project. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel Preferences Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Travel Preferences Survey Form</h1>
+    <p id="description">Helps us make travel experiences better suited to your preferences. It's quick and easy, and your answers will shape future travel options!</p>
+
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name 
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </label>
+            <label for="email" id="email-label">Email
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </label>
+            <label for="number" id="number-label">Age
+                <input id="number" type="number" name="" min="10" max="120" placeholder="Enter your age">
+            </label>
+            <label for="destination">Favorite destination
+                <input id="destination" type="text" placeholder="For example: Paris, France ">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">  Prefered Type of Accommmodation
+                <select id="dropdown"> 
+                    <option value="1">Hotel</option>
+                    <option value="2">Apartment</option>
+                    <option value="3">House</option>
+                    <option value="4">Hostel</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>When you travel, do you prefer to:</legend>
+            <label for="travel-alone">
+                <input id="travel-alone" class="inline" type="radio" name="travel" value="travel-alone"> Travel alone
+            </label>
+            <label for="travel-with-family">
+                <input id="travel-with-family" class="inline" type="radio" name="travel" value="travel-with-family"> Travel with family
+            </label>
+            <label for="travel-with-friends">
+                <input id="travel-with-friends" class="inline" type="radio" name="travel" value="travel-with-friends"> Travel with friends
+            </label>
+            <label for="travel-with-partner">
+                <input id="travel-with-partner" class="inline" type="radio" name="travel" value="travel-with-partner"> Travel with a partner
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Which of the following activities do you enjoy during your travels? Please check all that apply.</legend>
+            <label for="sightseeing">
+                <input id="sightseeing" type="checkbox" value="sightseeing"> Sightseeing
+            </label>
+            <label for="hiking">
+                <input id="hiking" type="checkbox" value="hiking"> Hiking
+            </label>
+            <label for="beach-activities">
+                <input id="beach-activities" type="checkbox" value="beach-activities"> Beach activities
+            </label>
+            <label for="cultura-experiences">
+                <input id="cultural-experiences" type="checkbox" value="cultura-experiences"> Cultural experiences
+            </label>
+            <label for="adventure-sports">
+                <input id="adventure-sports" type="checkbox" value="adventure-sports"> Adventure sports
+            </label>
+            <label for="shopping">
+                <input id="shopping" type="checkbox" value="shopping"> Shopping
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="additional"> Additional Comments:
+                <textarea name="" id="additional" cols="30" rows="10"></textarea>
+            </label>
+        </fieldset>
+
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+</body>
+</html>
